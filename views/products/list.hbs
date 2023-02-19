@@ -1,21 +1,20 @@
-<div class="products-container">
-  <div>
-    <h1> Products List</h1>
+<div class="container-sm pt-0">
+  <div class="d-flex justify-content-center">
+    <h1 class="display-4 "> Products List</h1>
   </div>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     {{#each products as |product|}}
-      <div class="card products-cards" style="width: 12rem;">
+      <div class="card products-cards me-5" style="width: 15rem;">
         {{#if product.image}}
-          <img class="card-img-top" src="{{product.image}}" />
+          <img class="card-img-top mt-2" class="card text-center" src="{{product.image}}" />
         {{/if}}
-        <h5 class="card-title">{{product.title}}</h5>
+        <h5 class="card-header" class="card-title">{{product.title}}</h5>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Seller - {{product.user.name}}</li>
-          <li class="list-group-item"> Price - {{product.price}}</li>
+          <li class="list-group-item">Price - {{product.price}}</li>
         </ul>
-        <div>
-         <a href="/products/{{product.id}}" class="btn btn-primary btn-sm">Detail</a>
-          
+        <div  class="d-grid gap-2 col-8 mx-auto">
+         <a href="/products/{{product.id}}" class="btn btn-primary btn-sm mt-2 mb-2"  >Detail</a>
         </div>
       </div>
     {{/each}}
