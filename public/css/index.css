@@ -1,5 +1,4 @@
-
-form {
+.formHome {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +7,7 @@ form {
     max-width: 1000px;
   }
   
-  input[type="text"] {
+  .inputHome[type="text"] {
     background-color: #eadada;
     border: none;
     color: #b3b3b3;
@@ -19,7 +18,7 @@ form {
     
   }
   
-  button[type="submit"] {
+  .buttonHome {
     background-color: #26bb98;
     border: none;
     color: #ffffff;
@@ -29,22 +28,27 @@ form {
     border-radius: 24px;
   }
 
-  .navbar-custom {
-    background-color: #26bb98;
-}
-
-.navButton {
-    background-color: #26bb98;
-    color: white;
-    padding: 1em 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 24px;
-  }
-
   h1 {
     color: #26bb98;
    text-align: center;
     height: 300px;
     font-size: 100px;
   }
+
+  .click {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #26bb98;
+    border-radius: 6px;
+    outline: none;
+  }
+  .homeSelect {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  
